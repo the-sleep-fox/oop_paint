@@ -30,8 +30,6 @@ class Menu
                     break;
                 case "2":
                     manager.ShowAllCanvases();
-                    Console.WriteLine("Нажмите любую клавишу для возврата...");
-                    Console.ReadKey();
                     break;
                 case "3":
                     return;
