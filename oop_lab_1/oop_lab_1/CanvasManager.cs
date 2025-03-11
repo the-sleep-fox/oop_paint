@@ -1,17 +1,44 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using oop_lab_1;
+using static System.Net.WebRequestMethods;
+
+
 
 class CanvasManager
 {
-    private const string CanvasFolder = "Canvases";
+    private const string canvasFolder = "Canvases";
 
+
+    public void OpenCanvas(string fileName)
+    {
+        string filePath = Path.Combine(canvasFolder, fileName);
+
+        if (!System.IO.File.Exists(filePath))
+        {
+            Console.WriteLine("Файл не найден!");
+            return;
+        }
+
+        Console.Clear();
+        Console.WriteLine($"Открыт файл: {fileName}");
+        Console.WriteLine(new string('-', 40));
+
+        string[] lines = System.IO.File.ReadAllLines(filePath);
+        foreach (string line in lines)
+        {
+            Console.WriteLine(line);
+        }
+
+        Console.WriteLine(new string('-', 40));
+        Console.WriteLine("Нажмите любую клавишу для выхода...");
+        Console.ReadKey();
+    }
     public CanvasManager()
     {
-        if (!Directory.Exists(CanvasFolder))
+        if (!Directory.Exists(canvasFolder))
         {
-            Directory.CreateDirectory(CanvasFolder);
+            Directory.CreateDirectory(canvasFolder);
         }
     }
 
@@ -20,7 +47,7 @@ class CanvasManager
         List<string> existingCanvases = GetCanvasList();
         int canvasNumber = existingCanvases.Count + 1;
         string fileName = $"canvas_{canvasNumber}.txt";
-        string filePath = Path.Combine(CanvasFolder, fileName);
+        string filePath = Path.Combine(canvasFolder, fileName);
 
         char[,] canvas = GenerateCanvas(width, height);
 
@@ -53,14 +80,24 @@ class CanvasManager
         {
             Console.WriteLine($"{i + 1}. {canvases[i]}");
         }
+        Console.Write("Введите номер файла для открытия: ");
+        if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= canvases.Count)
+        {
+            OpenCanvas(Path.GetFileName(canvases[index - 1]));
+        }
+        else
+        {
+            Console.WriteLine("Некорректный номер.");
+            Console.ReadKey();
+        }
     }
 
     private List<string> GetCanvasList()
     {
         List<string> canvases = new List<string>();
-        if (Directory.Exists(CanvasFolder))
+        if (Directory.Exists(canvasFolder))
         {
-            foreach (var file in Directory.GetFiles(CanvasFolder, "canvas_*.txt"))
+            foreach (var file in Directory.GetFiles(canvasFolder, "canvas_*.txt"))
             {
                 canvases.Add(Path.GetFileName(file));
             }
