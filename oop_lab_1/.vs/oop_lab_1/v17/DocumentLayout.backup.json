@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\canvasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\canvasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\canvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\canvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Menu.cs",
-              "RelativeDocumentMoniker": "oop_lab_1\\Menu.cs",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Menu.cs",
-              "RelativeToolTip": "oop_lab_1\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:07:29.074Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -44,12 +39,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CanvasManager.cs",
+              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\CanvasManager.cs",
+              "RelativeDocumentMoniker": "oop_lab_1\\CanvasManager.cs",
+              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\CanvasManager.cs",
+              "RelativeToolTip": "oop_lab_1\\CanvasManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T11:21:50.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Canvas.cs",
+              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Canvas.cs",
+              "RelativeDocumentMoniker": "oop_lab_1\\Canvas.cs",
+              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Canvas.cs",
+              "RelativeToolTip": "oop_lab_1\\Canvas.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T09:25:18.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Menu.cs",
+              "RelativeDocumentMoniker": "oop_lab_1\\Menu.cs",
+              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Menu.cs",
+              "RelativeToolTip": "oop_lab_1\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:07:29.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Program.cs",
               "RelativeDocumentMoniker": "oop_lab_1\\Program.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Program.cs",
               "RelativeToolTip": "oop_lab_1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T14:18:56.378Z",
               "EditorCaption": ""
