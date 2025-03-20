@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\oop_lab_1.csproj",
-      "projectName": "oop_lab_1",
-      "projectPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\oop_lab_1.csproj",
+      "projectUniqueName": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\paint\\paint.csproj",
+      "projectName": "paint",
+      "projectPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\paint\\paint.csproj",
       "packagesPath": "C:\\Users\\SP619\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\obj\\",
+      "outputPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\paint\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

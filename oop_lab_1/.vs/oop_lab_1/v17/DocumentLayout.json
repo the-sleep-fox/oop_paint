@@ -3,34 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\oop_lab_1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\oop_lab_1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\oop_lab_1\\canvasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DAB86A-BFFF-4848-A6C7-F2E4D1565FDB}|oop_lab_1\\oop_lab_1.csproj|solutionrelative:oop_lab_1\\canvasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{011BD2C7-2CF6-4EB1-BB7A-78E22299CBF4}|paint\\paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_lab_1\\paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{011BD2C7-2CF6-4EB1-BB7A-78E22299CBF4}|paint\\paint.csproj|solutionrelative:paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 368,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -47,79 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "circle.cs",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\shapes\\circle.cs",
-              "RelativeDocumentMoniker": "oop_lab_1\\shapes\\circle.cs",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\shapes\\circle.cs",
-              "RelativeToolTip": "oop_lab_1\\shapes\\circle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T08:44:26.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "shape.cs",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\shapes\\shape.cs",
-              "RelativeDocumentMoniker": "oop_lab_1\\shapes\\shape.cs",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\shapes\\shape.cs",
-              "RelativeToolTip": "oop_lab_1\\shapes\\shape.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T08:29:15.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "oop_lab_1",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\oop_lab_1.csproj",
-              "RelativeDocumentMoniker": "oop_lab_1\\oop_lab_1.csproj",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\oop_lab_1.csproj",
-              "RelativeToolTip": "oop_lab_1\\oop_lab_1.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-14T08:05:51.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CanvasManager.cs",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\CanvasManager.cs",
-              "RelativeDocumentMoniker": "oop_lab_1\\CanvasManager.cs",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\CanvasManager.cs",
-              "RelativeToolTip": "oop_lab_1\\CanvasManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T11:21:50.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Menu.cs",
-              "RelativeDocumentMoniker": "oop_lab_1\\Menu.cs",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Menu.cs",
-              "RelativeToolTip": "oop_lab_1\\Menu.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwB8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:07:29.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Program.cs",
-              "RelativeDocumentMoniker": "oop_lab_1\\Program.cs",
-              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\oop_lab_1\\Program.cs",
-              "RelativeToolTip": "oop_lab_1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\paint\\Program.cs",
+              "RelativeDocumentMoniker": "paint\\Program.cs",
+              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_lab_1\\paint\\Program.cs",
+              "RelativeToolTip": "paint\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T14:18:56.378Z",
+              "WhenOpened": "2025-03-20T01:33:03.485Z",
               "EditorCaption": ""
             }
           ]
