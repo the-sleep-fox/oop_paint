@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y3CktOXecxk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\oop_paint.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SP619\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
