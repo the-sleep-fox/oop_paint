@@ -1,74 +1,194 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using oop_paint.shapes;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
-namespace oop_paint
+public class Canvas
 {
-    public class Canvas
+    private const int Width = 200;
+    private const int Height = 100;
+    private List<Shape> shapes = new List<Shape>();
+    private Stack<List<Shape>> undoStack = new Stack<List<Shape>>();
+    private Stack<List<Shape>> redoStack = new Stack<List<Shape>>();
+    public int ShapesCount => shapes.Count;
+
+    public int GetWidth() => Width;
+    public int GetHeight() => Height;
+
+    public void SetShapeBackground(int index, char backgroundChar)
     {
-        private readonly char[,] _pixels;
-        public int Width { get; }
-        public int Height { get; }
-        public ConsoleColor BackgroundColor { get; set; } = ConsoleColor.Black;
-        public ConsoleColor ForegroundColor { get; set; } = ConsoleColor.White;
-        public char EmptyPixel { get; set; } = ' ';
-
-        public Canvas(int width, int height)
+        if (index >= 0 && index < shapes.Count)
         {
-            Width = width;
-            Height = height;
-            _pixels = new char[height, width];
-            Clear();
+            SaveState();
+            shapes[index].BackgroundChar = backgroundChar;
+            Redraw();
         }
+    }
+    public void AddShape(Shape shape)
+    {
+        SaveState();
+        shapes.Add(shape);
+        Redraw();
+    }
 
-        public void Clear()
+    public void MoveShape(int index, int newX, int newY)
+    {
+        if (index >= 0 && index < shapes.Count)
         {
-            for (int y = 0; y < Height; y++)
+            SaveState();
+            shapes[index].X = Math.Clamp(newX, 1, Width - 2);
+            shapes[index].Y = Math.Clamp(newY, 1, Height - 2);
+            Redraw();
+        }
+    }
+
+    public void DeleteShape(int index)
+    {
+        if (index >= 0 && index < shapes.Count)
+        {
+            SaveState();
+            shapes.RemoveAt(index);
+            Redraw();
+        }
+    }
+
+    public void SaveCanvas(string filename)
+    {
+        try
+        {
+            var options = new JsonSerializerOptions
             {
-                for (int x = 0; x < Width; x++)
-                {
-                    _pixels[y, x] = EmptyPixel;
-                }
+                WriteIndented = true,
+                Converters = { new JsonStringEnumConverter() }
+            };
+            string json = JsonSerializer.Serialize(shapes, options);
+            File.WriteAllText(filename, json);
+            Console.WriteLine("Canvas saved successfully.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error saving canvas: {ex.Message}");
+        }
+    }
+
+    public void LoadCanvas(string filename)
+    {
+        try
+        {
+            if (!File.Exists(filename))
+            {
+                Console.WriteLine("File not found.");
+                return;
+            }
+
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new JsonStringEnumConverter() }
+            };
+            string json = File.ReadAllText(filename);
+            shapes = JsonSerializer.Deserialize<List<Shape>>(json, options) ?? new List<Shape>();
+            Console.WriteLine("Canvas loaded successfully.");
+            Redraw();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading canvas: {ex.Message}");
+        }
+    }
+
+    public void Undo()
+    {
+        if (undoStack.Count > 0)
+        {
+            // Push current state to redo stack
+            redoStack.Push(CreateShapesCopy(shapes));
+
+            // Restore previous state
+            shapes = CreateShapesCopy(undoStack.Pop());
+            Redraw();
+        }
+        else
+        {
+            Console.WriteLine("Nothing to undo.");
+        }
+    }
+
+    public void Redo()
+    {
+        if (redoStack.Count > 0)
+        {
+            // Push current state to undo stack
+            undoStack.Push(CreateShapesCopy(shapes));
+
+            // Restore next state
+            shapes = CreateShapesCopy(redoStack.Pop());
+            Redraw();
+        }
+        else
+        {
+            Console.WriteLine("Nothing to redo.");
+        }
+    }
+    private void SaveState()
+    {
+        undoStack.Push(CreateShapesCopy(shapes));
+        redoStack.Clear();
+    }
+
+    private List<Shape> CreateShapesCopy(List<Shape> original)
+    {
+        var copy = new List<Shape>();
+        foreach (var shape in original)
+        {
+            if (shape is Circle circle)
+            {
+                copy.Add(new Circle(circle.X, circle.Y, circle.Radius, circle.BackgroundChar));
+            }
+            // Add other shape types here as needed
+        }
+        return copy;
+    }
+    private void Redraw()
+    {
+        Console.Clear();
+        DrawFrame();
+
+        // Create a buffer to draw everything at once
+        char[,] buffer = new char[Height, Width];
+
+        // Initialize buffer with empty spaces and frame
+        for (int y = 0; y < Height; y++)
+        {
+            for (int x = 0; x < Width; x++)
+            {
+                if (y == 0 || y == Height - 1) buffer[y, x] = '-';
+                else if (x == 0 || x == Width - 1) buffer[y, x] = '|';
+                else buffer[y, x] = ' ';
             }
         }
 
-        public void SetPixel(int x, int y, char value)
+        // Draw shapes into the buffer
+        foreach (var shape in shapes)
         {
-            if (x >= 0 && x < Width && y >= 0 && y < Height)
+            shape.Draw(buffer);
+        }
+
+        // Output the buffer
+        Console.SetCursorPosition(0, 0);
+        for (int y = 0; y < Height; y++)
+        {
+            for (int x = 0; x < Width; x++)
             {
-                _pixels[y, x] = value;
+                Console.Write(buffer[y, x]);
             }
+            Console.WriteLine();
         }
 
-        public void DrawPoint(double x, double y, char symbol)
-        {
-            int canvasX = (int)Math.Round(x);
-            int canvasY = (int)Math.Round(y);
-            SetPixel(canvasX, canvasY, symbol);
-        }
+        // Reset cursor position for menu
+        Console.SetCursorPosition(0, Height + 1);
+    }
 
-        public void Render()
-        {
-            Console.ForegroundColor = ForegroundColor;
-            Console.BackgroundColor = BackgroundColor;
-
-            var sb = new StringBuilder();
-            for (int y = 0; y < Height; y++)
-            {
-                for (int x = 0; x < Width; x++)
-                {
-                    sb.Append(_pixels[y, x]);
-                }
-                sb.AppendLine();
-            }
-            Console.Write(sb.ToString());
-        }
-
-        public void DrawShape(Shape shape)
-        {
-            shape.Draw();
-        }
+    private void DrawFrame()
+    {
+        // Frame is now drawn in the buffer
     }
 }

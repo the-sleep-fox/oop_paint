@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +25,7 @@ namespace oop_paint.shapes
         while (_size <= 0);
     }
 
-    public override void Draw()
+    public override void Draw(Canvas canvas)
     {
         Console.ForegroundColor = Settings.Color;
         int height = (int)(_size / Settings.AspectRatio);
@@ -37,3 +37,4 @@ namespace oop_paint.shapes
     }
 }
 }
+*/

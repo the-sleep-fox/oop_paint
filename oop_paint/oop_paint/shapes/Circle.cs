@@ -2,45 +2,72 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace oop_paint.shapes
 {
+
+    [JsonDerivedType(typeof(Circle), typeDiscriminator: "circle")]
     public class Circle : Shape
     {
-        private double _radius;
+        public int Radius { get; set; }
 
-        public Circle(DrawingSettings settings) : base(settings) { }
 
-        public override void RequestDimensions()
+        public Circle() { } // Required for deserialization
+
+        public Circle(int x, int y, int radius, char backgroundChar = ' ')
         {
-            do
-            {
-                Console.Write("Введите радиус: ");
-                if (!double.TryParse(Console.ReadLine(), out _radius) || _radius <= 0)
-                {
-                    Console.WriteLine("Радиус должен быть положительным числом");
-                }
-            }
-            while (_radius <= 0);
+            X = x;
+            Y = y;
+            Radius = radius;
+            BackgroundChar = backgroundChar;
+
         }
 
-        public override void Draw()
+        public override bool IsPointInside(int px, int py)
         {
-            Console.ForegroundColor = Settings.Color;
+            int dx = px - X;
+            int dy = py - Y;
+            return dx * dx + dy * dy <= Radius * Radius;
+        }
 
-            double rIn = _radius - Settings.BorderThickness;
-            double rOut = _radius + Settings.BorderThickness;
-
-            for (double y = _radius; y >= -_radius; --y)
+        public override void Draw(char[,] buffer)
+        {
+            if (BackgroundChar != ' ')
             {
-                for (double x = -_radius; x < rOut; x += 0.5)
+                // Use canvas dimensions through parent reference
+                int left = Math.Max(1, X - Radius);
+                int right = Math.Min(200 - 2, X + Radius);
+                int top = Math.Max(1, Y - Radius);
+                int bottom = Math.Min(100 - 2, Y + Radius);
+
+                for (int y = top; y <= bottom; y++)
                 {
-                    double value = x * x + (y * Settings.AspectRatio) * (y * Settings.AspectRatio);
-                    Console.Write(value >= rIn * rIn && value <= rOut * rOut ? Settings.Symbol : ' ');
+                    for (int x = left; x <= right; x++)
+                    {
+                        if (IsPointInside(x, y))
+                        {
+                            buffer[y, x] = BackgroundChar;
+                        }
+                    }
                 }
-                Console.WriteLine();
             }
+
+
+            for (double angle = 0; angle < 360; angle += 10)
+            {
+                int px = (int)(X + Radius * Math.Cos(angle * Math.PI / 180));
+                int py = (int)(Y + Radius * Math.Sin(angle * Math.PI / 180));
+
+                if (px >= 1 && px < 200 - 1 &&
+                    py >= 1 && py < 100 - 1)
+                {
+                    buffer[py, px] = '*';
+                }
+            }
+
         }
     }
 }
+

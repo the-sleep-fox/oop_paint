@@ -1,0 +1,12 @@
+[
+  {
+    "X": 45,
+    "Y": 67,
+    "BackgroundChar": "9"
+  },
+  {
+    "X": 20,
+    "Y": 20,
+    "BackgroundChar": "\u002B"
+  }
+]
