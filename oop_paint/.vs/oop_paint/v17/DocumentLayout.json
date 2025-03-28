@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\shapes\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\shapes\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,8 +11,28 @@
       "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\canvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\shapes\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\shapes\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\shapes\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\shapes\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\shapes\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|c:\\users\\sp619\\desktop\\oop\\oop_paint\\oop_paint\\newfolder\\shapejsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CCA6F11-917B-4619-985C-817C70E89B87}|oop_paint\\oop_paint.csproj|solutionrelative:oop_paint\\newfolder\\shapejsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 302,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,39 +58,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "ShapeJsonConverter.cs",
+              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\NewFolder\\ShapeJsonConverter.cs",
+              "RelativeDocumentMoniker": "oop_paint\\NewFolder\\ShapeJsonConverter.cs",
+              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\NewFolder\\ShapeJsonConverter.cs",
+              "RelativeToolTip": "oop_paint\\NewFolder\\ShapeJsonConverter.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T09:56:15.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "oop_paint\\ClassDiagram1.cd",
+              "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\ClassDiagram1.cd",
+              "RelativeToolTip": "oop_paint\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-03-28T08:04:43.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Canvas.cs",
               "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\Canvas.cs",
               "RelativeDocumentMoniker": "oop_paint\\Canvas.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\Canvas.cs",
               "RelativeToolTip": "oop_paint\\Canvas.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwJ4AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAqwHgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T22:45:32.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Rectangle.cs",
               "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Rectangle.cs",
               "RelativeDocumentMoniker": "oop_paint\\shapes\\Rectangle.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Rectangle.cs",
               "RelativeToolTip": "oop_paint\\shapes\\Rectangle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T10:05:21.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Circle.cs",
               "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Circle.cs",
               "RelativeDocumentMoniker": "oop_paint\\shapes\\Circle.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Circle.cs",
               "RelativeToolTip": "oop_paint\\shapes\\Circle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T10:05:08.336Z",
               "EditorCaption": ""
@@ -95,33 +128,33 @@
               "RelativeDocumentMoniker": "oop_paint\\shapes\\Triangle.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Triangle.cs",
               "RelativeToolTip": "oop_paint\\shapes\\Triangle.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAkwEsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T10:04:54.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Shape.cs",
               "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Shape.cs",
               "RelativeDocumentMoniker": "oop_paint\\shapes\\Shape.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\shapes\\Shape.cs",
               "RelativeToolTip": "oop_paint\\shapes\\Shape.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T10:04:37.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\Program.cs",
               "RelativeDocumentMoniker": "oop_paint\\Program.cs",
               "ToolTip": "C:\\Users\\SP619\\Desktop\\oop\\oop_paint\\oop_paint\\Program.cs",
               "RelativeToolTip": "oop_paint\\Program.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAYwFgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAYwFsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T09:59:25.377Z",
               "EditorCaption": ""

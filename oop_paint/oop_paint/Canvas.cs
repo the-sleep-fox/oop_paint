@@ -1,6 +1,8 @@
 ﻿using oop_paint.shapes;
+using oop_paint.NewFolder;
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using oop_paint.shapes.oop_paint.shapes;
 
 public class Canvas
 {
@@ -119,7 +121,6 @@ public class Canvas
             // Push current state to undo stack
             undoStack.Push(CreateShapesCopy(shapes));
 
-            // Restore next state
             shapes = CreateShapesCopy(redoStack.Pop());
             Redraw();
         }
@@ -142,6 +143,19 @@ public class Canvas
             if (shape is Circle circle)
             {
                 copy.Add(new Circle(circle.X, circle.Y, circle.Radius, circle.BackgroundChar));
+            }
+            else if (shape is Triangle triangle)
+            {
+                copy.Add(new Triangle(
+                    triangle.X,
+                    triangle.Y,
+                    triangle.A,
+                    triangle.B,
+                    triangle.C,
+                    triangle.BackgroundChar)
+                {
+                    
+                });
             }
             // Add other shape types here as needed
         }
@@ -188,7 +202,25 @@ public class Canvas
     }
 
     private void DrawFrame()
-    {
+    { 
         // Frame is now drawn in the buffer
+    }
+    public void DisplayShapeInfo()
+    {
+        Console.WriteLine($"Canvas contains {shapes.Count} shapes:");
+        for (int i = 0; i < shapes.Count; i++)
+        {
+            var shape = shapes[i];
+            if (shape is Triangle triangle)
+            {
+                Console.WriteLine($"[{i}] Triangle at ({triangle.X},{triangle.Y}) " +
+                    $"with sides {triangle.A},{triangle.B},{triangle.C}");
+            }
+            else if (shape is Circle circle)
+            {
+                Console.WriteLine($"[{i}] Circle at ({circle.X},{circle.Y}) " +
+                    $"with radius {circle.Radius}");
+            }
+        }
     }
 }

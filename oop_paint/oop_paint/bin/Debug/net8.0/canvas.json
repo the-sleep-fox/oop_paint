@@ -1,12 +1,18 @@
 [
   {
-    "X": 45,
-    "Y": 67,
-    "BackgroundChar": "9"
+    "$type": "circle",
+    "Radius": 10,
+    "X": 56,
+    "Y": 56,
+    "BackgroundChar": " "
   },
   {
-    "X": 20,
-    "Y": 20,
-    "BackgroundChar": "\u002B"
+    "$type": "triangle",
+    "A": 10,
+    "B": 33,
+    "C": 40,
+    "X": 67,
+    "Y": 67,
+    "BackgroundChar": " "
   }
 ]

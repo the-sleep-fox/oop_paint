@@ -7,15 +7,12 @@ using System.Threading.Tasks;
 
 namespace oop_paint.shapes
 {
-
-    [JsonDerivedType(typeof(Circle), typeDiscriminator: "circle")]
     public class Circle : Shape
     {
         public int Radius { get; set; }
 
-
-        public Circle() { } // Required for deserialization
-
+        [JsonConstructor]
+        public Circle() { }
         public Circle(int x, int y, int radius, char backgroundChar = ' ')
         {
             X = x;

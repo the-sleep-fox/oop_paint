@@ -1,5 +1,6 @@
 ﻿using oop_paint;
 using oop_paint.shapes;
+using oop_paint.shapes.oop_paint.shapes;
 using System;
 
 class Program
@@ -12,14 +13,17 @@ class Program
         while (running)
         {
             Console.WriteLine("1. Add Circle");
-            Console.WriteLine("2. Move Shape");
-            Console.WriteLine("3. Delete Shape");
-            Console.WriteLine("4. Save Canvas");
-            Console.WriteLine("5. Load Canvas");
-            Console.WriteLine("6. Undo");
-            Console.WriteLine("7. Redo");
-            Console.WriteLine("8. Set Background");
-            Console.WriteLine("9. Exit");
+            Console.WriteLine("2. Add Triangle");
+            Console.WriteLine("3. Add Rectangle");
+            Console.WriteLine("4. Move Shape");
+            Console.WriteLine("5. Delete Shape");
+            Console.WriteLine("6. Save Canvas");
+            Console.WriteLine("7. Load Canvas");
+            Console.WriteLine("8. Undo");
+            Console.WriteLine("9. Redo");
+            Console.WriteLine("10. Set Background");
+            Console.WriteLine("11. Display info about canvas");
+            Console.WriteLine("12. Exit");
             Console.Write("Choose an option: ");
 
             switch (Console.ReadLine())
@@ -38,6 +42,24 @@ class Program
                     canvas.AddShape(new Circle(x, y, r, bgChar));
                     break;
                 case "2":
+                    Console.Write("Enter X (1-48): ");
+                    int x1 = int.Parse(Console.ReadLine());
+                    Console.Write("Enter Y (1-18): ");
+                    int y1 = int.Parse(Console.ReadLine());
+                    Console.Write("Enter A side: ");
+                    int a = int.Parse(Console.ReadLine());
+                    Console.Write("Enter B side): ");
+                    int b = int.Parse(Console.ReadLine());
+                    Console.Write("Enter C side: ");
+                    int c = int.Parse(Console.ReadLine());
+                    Console.Write("Enter Background Character (space for none): ");
+                    char bgChar1 = Console.ReadKey().KeyChar;
+                    canvas.AddShape(new Triangle(x1, y1, a, b, c, bgChar1));
+                    break;
+                case "3":
+                    
+                    break;
+                case "4":
                     Console.Write("Enter shape index to move: ");
                     int index = int.Parse(Console.ReadLine());
                     Console.Write("Enter new X: ");
@@ -46,24 +68,24 @@ class Program
                     int newY = int.Parse(Console.ReadLine());
                     canvas.MoveShape(index, newX, newY);
                     break;
-                case "3":
+                case "5":
                     Console.Write("Enter shape index to delete: ");
                     int deleteIndex = int.Parse(Console.ReadLine());
                     canvas.DeleteShape(deleteIndex);
                     break;
-                case "4":
+                case "6":
                     canvas.SaveCanvas("canvas.json");
                     break;
-                case "5":
+                case "7":
                     canvas.LoadCanvas("canvas.json");
                     break;
-                case "6":
+                case "8":
                     canvas.Undo();
                     break;
-                case "7":
+                case "9":
                     canvas.Redo();
                     break;
-                case "8":
+                case "10":
                     if (canvas.ShapesCount > 0)
                     {
                         Console.Write("Enter shape index: ");
@@ -77,7 +99,10 @@ class Program
                         Console.WriteLine("No shapes available.");
                     }
                     break;
-                case "9":
+                case "11":
+                    canvas.DisplayShapeInfo();
+                    break;
+                case "12":
                     running = false;
                     break;
                 default:
