@@ -14,5 +14,38 @@
     "X": 67,
     "Y": 67,
     "BackgroundChar": " "
+  },
+  {
+    "$type": "circle",
+    "Radius": 10,
+    "X": 34,
+    "Y": 34,
+    "BackgroundChar": " "
+  },
+  {
+    "$type": "triangle",
+    "A": 10,
+    "B": 20,
+    "C": 60,
+    "X": 70,
+    "Y": 70,
+    "BackgroundChar": "#"
+  },
+  {
+    "$type": "triangle",
+    "A": 70,
+    "B": 60,
+    "C": 13,
+    "X": 23,
+    "Y": 24,
+    "BackgroundChar": " "
+  },
+  {
+    "$type": "rectangle",
+    "Width": 50,
+    "Height": 50,
+    "X": 90,
+    "Y": 20,
+    "BackgroundChar": " "
   }
 ]

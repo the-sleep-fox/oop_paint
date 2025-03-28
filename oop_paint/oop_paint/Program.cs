@@ -1,6 +1,5 @@
 ﻿using oop_paint;
 using oop_paint.shapes;
-using oop_paint.shapes.oop_paint.shapes;
 using System;
 
 class Program
@@ -42,9 +41,9 @@ class Program
                     canvas.AddShape(new Circle(x, y, r, bgChar));
                     break;
                 case "2":
-                    Console.Write("Enter X (1-48): ");
+                    Console.Write("Enter X(0-200): ");
                     int x1 = int.Parse(Console.ReadLine());
-                    Console.Write("Enter Y (1-18): ");
+                    Console.Write("Enter Y(0-100): ");
                     int y1 = int.Parse(Console.ReadLine());
                     Console.Write("Enter A side: ");
                     int a = int.Parse(Console.ReadLine());
@@ -57,7 +56,17 @@ class Program
                     canvas.AddShape(new Triangle(x1, y1, a, b, c, bgChar1));
                     break;
                 case "3":
-                    
+                    Console.Write("Enter X (0-200): ");
+                    int x2 = int.Parse(Console.ReadLine());
+                    Console.Write("Enter Y (0-100): ");
+                    int y2 = int.Parse(Console.ReadLine());
+                    Console.Write("Enter A side: ");
+                    int a2 = int.Parse(Console.ReadLine());
+                    Console.Write("Enter B side): ");
+                    int b2 = int.Parse(Console.ReadLine());
+                    Console.Write("Enter Background Character (space for none): ");
+                    char bgChar2 = Console.ReadKey().KeyChar;
+                    canvas.AddShape(new Rectangle(x2, y2, a2, b2, bgChar2));
                     break;
                 case "4":
                     Console.Write("Enter shape index to move: ");
@@ -91,7 +100,7 @@ class Program
                         Console.Write("Enter shape index: ");
                         int ind = int.Parse(Console.ReadLine());
                         Console.Write("Enter background character: ");
-                        char bgchar = Console.ReadLine()[0]; // Take first character
+                        char bgchar = Console.ReadLine()[0]; 
                         canvas.SetShapeBackground(ind, bgchar);
                     }
                     else

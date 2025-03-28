@@ -1,8 +1,8 @@
 ﻿using oop_paint.shapes;
-using oop_paint.NewFolder;
 using System.Text.Json.Serialization;
 using System.Text.Json;
-using oop_paint.shapes.oop_paint.shapes;
+
+
 
 public class Canvas
 {
@@ -101,10 +101,10 @@ public class Canvas
     {
         if (undoStack.Count > 0)
         {
-            // Push current state to redo stack
+           
             redoStack.Push(CreateShapesCopy(shapes));
 
-            // Restore previous state
+         
             shapes = CreateShapesCopy(undoStack.Pop());
             Redraw();
         }
@@ -118,7 +118,7 @@ public class Canvas
     {
         if (redoStack.Count > 0)
         {
-            // Push current state to undo stack
+            
             undoStack.Push(CreateShapesCopy(shapes));
 
             shapes = CreateShapesCopy(redoStack.Pop());
@@ -146,30 +146,27 @@ public class Canvas
             }
             else if (shape is Triangle triangle)
             {
-                copy.Add(new Triangle(
-                    triangle.X,
-                    triangle.Y,
-                    triangle.A,
-                    triangle.B,
-                    triangle.C,
-                    triangle.BackgroundChar)
-                {
-                    
-                });
+                copy.Add(new Triangle(triangle.X, triangle.Y, triangle.A, triangle.B, triangle.C, triangle.BackgroundChar));
+                
             }
-            // Add other shape types here as needed
+            else if (shape is Rectangle rectangle)
+            {
+                copy.Add(new Rectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height, rectangle.BackgroundChar));
+
+            }
+            
         }
-        return copy;
+        return copy; 
     }
     private void Redraw()
     {
         Console.Clear();
         DrawFrame();
 
-        // Create a buffer to draw everything at once
+        
         char[,] buffer = new char[Height, Width];
 
-        // Initialize buffer with empty spaces and frame
+       
         for (int y = 0; y < Height; y++)
         {
             for (int x = 0; x < Width; x++)
@@ -180,13 +177,13 @@ public class Canvas
             }
         }
 
-        // Draw shapes into the buffer
+        
         foreach (var shape in shapes)
         {
             shape.Draw(buffer);
         }
 
-        // Output the buffer
+      
         Console.SetCursorPosition(0, 0);
         for (int y = 0; y < Height; y++)
         {
@@ -197,13 +194,13 @@ public class Canvas
             Console.WriteLine();
         }
 
-        // Reset cursor position for menu
+        
         Console.SetCursorPosition(0, Height + 1);
     }
 
     private void DrawFrame()
     { 
-        // Frame is now drawn in the buffer
+        
     }
     public void DisplayShapeInfo()
     {
@@ -214,12 +211,17 @@ public class Canvas
             if (shape is Triangle triangle)
             {
                 Console.WriteLine($"[{i}] Triangle at ({triangle.X},{triangle.Y}) " +
-                    $"with sides {triangle.A},{triangle.B},{triangle.C}");
+                    $"with sides {triangle.A},{triangle.B},{triangle.C} an background char {triangle.BackgroundChar}");
             }
             else if (shape is Circle circle)
             {
                 Console.WriteLine($"[{i}] Circle at ({circle.X},{circle.Y}) " +
-                    $"with radius {circle.Radius}");
+                    $"with radius {circle.Radius} and background char {circle.BackgroundChar}");
+            }
+            else if(shape is Rectangle rectangle)
+            {
+                Console.WriteLine($"[{i}] Rectangle at ({rectangle.X},{rectangle.Y}) " +
+                   $"with sides {rectangle.Width},{rectangle.Height} and background char {rectangle.BackgroundChar}");
             }
         }
     }

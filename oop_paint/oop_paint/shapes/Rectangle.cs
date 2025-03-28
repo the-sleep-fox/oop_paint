@@ -1,71 +1,84 @@
-﻿/*using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System.Text.Json.Serialization;
+
 
 namespace oop_paint.shapes
 {
-    using System;
-    using System.Text.Json.Serialization;
-
-    namespace oop_paint.shapes
+    public class Rectangle : Shape
     {
-        [JsonDerivedType(typeof(Triangle), typeDiscriminator: "triangle")]
-        public class Triangle : Shape
+        public int Width { get; set; }
+        public int Height { get; set; }
+
+        [JsonConstructor]
+        public Rectangle() { }
+
+        public Rectangle(int x, int y, int width, int height, char backgroundChar = ' ')
         {
-            public int A { get; set; }
-            public int B { get; set; }
-            public int C { get; set; }
+            X = x;
+            Y = y;
+            Width = width;
+            Height = height;   
+            BackgroundChar = backgroundChar;
+        }
 
-            public (int, int) P2 { get; set; } // Second vertex
-            public (int, int) P3 { get; set; } // Third vertex
-
-            public Triangle() { } // Required for deserialization
-
-            public Triangle(int x, int y, int a, int b, int c, char backgroundChar = ' ')
+        public override void Draw(char[,] buffer)
+        {
+           
+            if (BackgroundChar != ' ')
             {
-                X = x;
-                Y = y;
-                A = a;
-                B = b;
-                C = c;
-                BackgroundChar = backgroundChar;
-                CalculateVertices();
-            }
-
-            private void CalculateVertices()
-            {
-                P2 = (X + A, Y); // Place second point horizontally to the right
-                int px = X + (int)((B * B - C * C + A * A) / (2.0 * A));
-                int py = Y - (int)Math.Sqrt(Math.Max(0, B * B - (px - X) * (px - X)));
-                P3 = (px, py);
-            }
-
-            private void DrawLine(int x1, int y1, int x2, int y2, char[,] buffer)
-            {
-                int dx = Math.Abs(x2 - x1), sx = x1 < x2 ? 1 : -1;
-                int dy = -Math.Abs(y2 - y1), sy = y1 < y2 ? 1 : -1;
-                int err = dx + dy, e2;
-
-                while (true)
+                for (int y = Y; y < Y + Height; y++)
                 {
-                    if (x1 >= 1 && x1 < 200 - 1 && y1 >= 1 && y1 < 100 - 1)
-                        buffer[y1, x1] = '*';
-
-                    if (x1 == x2 && y1 == y2) break;
-                    e2 = 2 * err;
-                    if (e2 >= dy) { err += dy; x1 += sx; }
-                    if (e2 <= dx) { err += dx; y1 += sy; }
+                    for (int x = X; x < X + Width; x++)
+                    {
+                        if (x >= 1 && x < buffer.GetLength(1) - 1 &&
+                            y >= 1 && y < buffer.GetLength(0) - 1)
+                        {
+                            buffer[y, x] = BackgroundChar;
+                        }
+                    }
                 }
             }
 
-            public override void Draw(char[,] buffer)
+     
+            for (int x = X; x < X + Width; x++)
             {
-                DrawLine(X, Y, P2.Item1, P2.Item2, buffer);
-                DrawLine(P2.Item1, P2.Item2, P3.Item1, P3.Item2, buffer);
-                DrawLine(P3.Item1, P3.Item2, X, Y, buffer);
+                if (x >= 1 && x < buffer.GetLength(1) - 1 &&
+                    Y >= 1 && Y < buffer.GetLength(0) - 1)
+                {
+                    buffer[Y, x] = '*'; 
+                }
+
+                if (x >= 1 && x < buffer.GetLength(1) - 1 &&
+                    (Y + Height - 1) >= 1 && (Y + Height - 1) < buffer.GetLength(0) - 1)
+                {
+                    buffer[Y + Height - 1, x] = '*'; 
+                }
             }
+
+          
+            for (int y = Y; y < Y + Height; y++)
+            {
+                if (y >= 1 && y < buffer.GetLength(0) - 1 &&
+                    X >= 1 && X < buffer.GetLength(1) - 1)
+                {
+                    buffer[y, X] = '*'; 
+                }
+
+                if (y >= 1 && y < buffer.GetLength(0) - 1 &&
+                    (X + Width - 1) >= 1 && (X + Width - 1) < buffer.GetLength(1) - 1)
+                {
+                    buffer[y, X + Width - 1] = '*'; 
+                }
+            }
+
+            Console.ResetColor();
+        }
+
+        public override bool IsPointInside(int px, int py)
+        {
+            return px >= X && px <= X + Width - 1 &&
+                   py >= Y && py <= Y + Height - 1;
         }
     }
-}*//**/
+}
+

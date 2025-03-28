@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace oop_paint.shapes
 {
@@ -33,7 +28,7 @@ namespace oop_paint.shapes
         {
             if (BackgroundChar != ' ')
             {
-                // Use canvas dimensions through parent reference
+                
                 int left = Math.Max(1, X - Radius);
                 int right = Math.Min(200 - 2, X + Radius);
                 int top = Math.Max(1, Y - Radius);

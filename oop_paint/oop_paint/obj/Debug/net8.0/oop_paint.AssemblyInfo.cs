@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("oop_paint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0a5208fee673c061d902bce2bbb2058bafa7dbf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c6b915159d41c8e5f4577fbf7973ec50c82460f")]
 [assembly: System.Reflection.AssemblyProductAttribute("oop_paint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("oop_paint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,11 +1,10 @@
-﻿
-using oop_paint.shapes.oop_paint.shapes;
-using oop_paint.shapes;
+﻿using oop_paint.shapes;
 using System.Text.Json.Serialization;
 
 [JsonPolymorphic]
 [JsonDerivedType(typeof(Circle), typeDiscriminator: "circle")]
 [JsonDerivedType(typeof(Triangle), typeDiscriminator: "triangle")]
+[JsonDerivedType(typeof(Rectangle), typeDiscriminator: "rectangle")]
 public abstract class Shape
 {
     public int X { get; set; }
@@ -14,7 +13,5 @@ public abstract class Shape
     [JsonConstructor]
     protected Shape() { }
     public abstract void Draw(char[,] buffer);
-
-    // Helper method to check if point is inside shape
     public abstract bool IsPointInside(int px, int py);
 }
