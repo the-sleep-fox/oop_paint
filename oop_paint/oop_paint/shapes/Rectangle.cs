@@ -71,7 +71,7 @@ namespace oop_paint.shapes
                 }
             }
 
-            Console.ResetColor();
+           
         }
 
         public override bool IsPointInside(int px, int py)
